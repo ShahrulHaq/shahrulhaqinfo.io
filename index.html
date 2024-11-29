@@ -1,390 +1,171 @@
 <!DOCTYPE html>
+<html lang="en">
 
-
-
-<html lang="en" dir="ltr">
-  <head>
-
-    <title>Responsive Navbar | CodingNepal</title>
-
-    <meta charset="utf-8">
-    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="MyFcbCV.css">
+    <title>Shahrul Haq</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skill_bar.css">
+</head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<body>
+    <!--
+    font-family: 'Poppins', sans-serif;
+    https://shahrulhaq.github.io/shahrulhaqinfo.io/
+    -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--header/ logo / nav bar-->
+    <header class="header">
+        <a href="" class="logo">Personal Blog</a>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <i class='bx bx-menu' id="menu-icon"></i>
 
-    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Kanit:ital,wght@0,200;0,300;0,400;0, 500;1,200;1,300;1400&family=Raleway:wght@200&   display=swap" rel="stylesheet">
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home section / profile photo / intro-->
+
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <h3>Hello. It's Me</h3>
+            <h1>Shahrul Haq</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Currrently i'm a 1st year sofware engineering student at Open University of Sri Lanka(OUSL)</p>
+
+            <div class="social-media">
+                <a href=""><i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-twitter'></i></a>
+                <a href=""><i class='bx bxl-instagram'></i></a>
+                <a href=""><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="" class="btn">Download CV</a>
+
+        </div>
+
+        <div class="home-img">
+            <img src="img/homed.png" alt="">
+        </div>
+
+    </section>
+
+    <!--About section / profile photo / intro phrass-->
+
+    <section class="about" id="about">
+
+        <div class="about-img">
+            <img src="img/homed.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Student!</h3>
+            <p>As a 1st-year software engineering student at Open University of Sri Lanka, I am committed to developing
+                and maintaining responsive and cooperative relationships with internal and external customers while
+                treating everyone with dignity, trust, and respect. Seeking a challenging software engineering position
+                where I can utilize my technical skills, creativity, and problem-solving abilities to contribute to the
+                development of innovative software solutions in a dynamic and collaborative environment.
+            </p>
+
+            <a href="" class="btn">About More</a>
+        </div>
+
+    </section>
+
+   <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt' ></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ex suscipit minus? Explicabo a, debitis culpa accusantium consectetur nam repudiandae!</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-code-alt' ></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ex suscipit minus? Explicabo a, debitis culpa accusantium consectetur nam repudiandae!</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-code-alt' ></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ex suscipit minus? Explicabo a, debitis culpa accusantium consectetur nam repudiandae!</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+   </section>
+
+<!--Portfolio/ project-content-->
 
 
+   <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="img/simple-calc.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Simple calculator</h4>
+                    <p>Simple calculator with theme colour changing option. #HTML #CSS #JS </p>
+                    <a href="#">
+                        <i class='bx bx-link-external'></i>
+                    </a>
+                </div>
+            </div>
+
+            
+        </div>
+   </section>
+
+   <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+   </section>
 
 
-  </head>
-  <body>
-    <section id="home">
-      <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <label class="name">SHAHRUL HAQ</label>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#profile">Profile</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#feedback">Feedback</a></li>
-        </ul>
-      </nav>
-      <div class="container">
-        <img id="dp" src="imgs/dp1.jpg" alt="">
-        <p>Hello!. <br>I'm Shahrul Haq. 
-          Currrently i'm a 
-          1st   year sofware engineering student at Open 
-          University   of Sri Lanka(OUSL)
-        </p>
-      </div>
-    </section> 
-    <div id="profile">
-      
-      <div id="pro_para">
-        <h3>Profile</h3>
-        <p>
-          As a 1st-year software engineering student at 
-        Open University of Sri Lanka, I am committed to 
-        developing and maintaining responsive and 
-        cooperative relationships with internal and 
-        external customers while treating everyone with 
-        dignity, trust, and respect. Seeking a 
-        challenging software engineering position where I 
-        can utilize my technical skills, creativity, and 
-        problem-solving abilities to contribute to the 
-        development of innovative software solutions in a 
-        dynamic and collaborative environment.
-        </p>
-      </div>
-      <table>
-          <tr>
-             <th>Name with initial</th>
-             <td> </td>
-             <td>: M.N.Shahrul Haq</td>
-          </tr>
-          <tr>
-             <th>Date of birth</th>
-             <td> </td>
-             <td>: 2000.08.20</td>
-          </tr>
-          <tr>
-             <th>Place of birth</th>
-             <td> </td>
-             <td>: Matale</td>
-          </tr>
-          <tr>
-             <th>Civil status</th>
-             <td> </td>
-             <td>: Unmarried</td>
-          </tr>
-          <tr>
-             <th>Citizenship</th>
-             <td> </td>
-             <td>: SriLankan</td>
-          </tr>
-          <tr>
-             <th>Relegion</th>
-             <td> </td>
-             <td>: Islam</td>
-          </tr>
-          <tr>
-            <th>Languages</th>
-            <td> </td>
-            <td>: Tamil, English, Singhala</td>
-         </tr>
-         <tr>
-            <th>Hobbies</th>
-            <td> </td>
-            <td>: Photography, Browsing</td>
-         </tr>  
-         <tr>
-            <th>Height</th>
-            <td> </td>
-            <td>: 175cm</td>
-         </tr>
-         <tr>
-            <th>Weight</th>
-            <td> </td>
-            <td>: 69Kg</td>
-         </tr>
-         <tr>
-            <th>Father's Name</th>
-            <td> </td>
-            <td>: S.M.Nizam</td>
-         </tr>
-         <tr>
-            <th>Mother's Name</th>
-            <td> </td>
-            <td>: M.Jennath beebi</td>
-         </tr>
-         <tr>
-           <th>Hobbies</th>
-           <td> </td>
-           <td>: Photography, Browsing</td>
-         </tr>  
-      </table>
-    </div>
-    <div id="skills">
-      <div id="left_side">
-      <h3>Skills</h3>
-      <dl>
-        <dt>MS office</dt>
-        <dd>
-          <div class="level_outline">
-            <div id="level_ms"></div>
-          </div>
-        </dd>
-      </dl>
-      <br>
-      <dl>
-        <dt>Photo editting</dt>
-        <dd>
-          <div class="level_outline">
-            <div id="level_pe"></div>
-          </div>
-        </dd>
-      </dl>
-      <br>
-      <dl>
-        <dt>Phtography</dt>
-        <dd>
-          <div class="level_outline">
-            <div id="level_phy"></div>
-          </div>
-        </dd>
-      </dl>
-      <br>
-      <dl>
-        <dt>Video editting</dt>
-        <dd>
-          <div class="level_outline">
-            <div id="level_ve"></div>
-          </div>
-        </dd>
-      </dl>
-      <br>
-      <dl>
-        <dt>Videography</dt>
-        <dd>
-          <div class="level_outline">
-            <div id="level_vy"></div>
-          </div>
-        </dd>
-      </dl>
-      <br>
-      </div>
-      <div id="right_side">
-      <br>
-      <dl>
-        <dt>HTML/CSS</dt>
-        <dd>
-          <div class="level_outline">
-            <div id="level_html"></div>
-          </div>
-        </dd>
-      </dl>
-      <br>
-      
-      <dl>
-        <dt>JavaScript</dt>
-        <dd>
-          <div class="level_outline">
-            <div id="level_js"></div>
-          </div>
-        </dd>
-      </dl>
-      <br>
-      <dl>
-        <dt>Python</dt>
-        <dd>
-          <div class="level_outline">
-            <div id="level_py"></div>
-          </div>
-        </dd>
-      </dl>
-      <br>
-      <dl>
-        <dt>SQL</dt>
-        <dd>
-          <div class="level_outline">
-            <div id="level_sql"></div>
-          </div>
-        </dd>
-      </dl>
-      <br>
-      <dl>
-        <dt>C Language</dt>
-        <dd>
-          <div class="level_outline">
-            <div id="level_c"></div>
-          </div>
-        </dd>
-      </dl>
-    </div>
-    </div>
-    <div id="education">
+   <!--Footer / text /icon -->
 
-      <div id="al">
-        <h3>Education qualifications</h3><br>
-        <table>
-    
-          <tr>
-            <th>Degree</th>
-            <td>:</td>
-            <td colspan="2"> Bachelor of software         engineering   (reading)
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <th >A/L Results</th>
-            <td> : </td>
-            <td>Chemistry</td>
-            <td>S</td>
-          </tr>
-          <tr>
-            <th></th>
-            <td> : </td>
-            <td>C.Maths</td>
-            <td>S</td>
-          </tr>
-          <tr>
-            <th></th>
-            <td> : </td>
-            <td>Physics</td>
-            <td>S</td>
-          </tr>
-          <tr>
-            <th></th>
-            <td> : </td>
-            <td>G.English</td>
-            <td>C</td>
-          </tr>
-          <tr>
-            <th></th>
-            <td>  </td>
-            <td>  </td>
-            <td>  </td>
-          </tr>
-        </table>
-      </div>
-      <table id="ol">
-        <tr>
-            <th>O/L Results</th>
-            <td> : </td>
-            <td>Maths</td>
-            <td>A</td>
-        </tr>
-        <tr>
-            <th></th>
-            <td> : </td>
-            <td>Geography</td>
-            <td>A</td>
-        </tr>
-        <tr>
-            <th></th>
-            <td> : </td>
-            <td>Histroy</td>
-            <td>A</td>
-        </tr>
-        <tr>
-            <th></th>
-            <td> : </td>
-            <td>Islam</td>
-            <td>A</td>
-        </tr>
-        <tr>
-            <th></th>
-            <td> : </td>
-            <td>Science</td>
-            <td>B</td>
-        </tr>
-        <tr>
-            <th></th>
-            <td> : </td>
-            <td>English</td>
-            <td>B</td>
-        </tr>
-        <tr>
-            <th></th>
-            <td> : </td>
-            <td>Tamil</td>
-            <td>B</td>
-        </tr>
-        <tr>
-            <th></th>
-            <td> : </td>
-            <td>Art</td>
-            <td>B</td>
-        </tr>
-        <tr>
-            <th></th>
-            <td> : </td>
-            <td>Agriculture</td>
-            <td>B</td>
-        </tr>
-      </table>
 
-    </div>
-    <div id="experience">
-      <dl>
-        <dt>CASHIER</dt>
-        <dd>I worked as a cashier at Nolimit Colombo City Center branch outlet for 8 months</dd>
-      </dl>
-      <br>
+   <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by shahrulhaq | All Rights Reserved.</p>
+        </div>
 
-    </div>
-    <div id="contact">
-      <a href="https://web.facebook.com/people/Shahrul-Haq/pfbid0Xonhw51UnQ6oKKGLzhCPThkrZizWrWRjZhuDkYChhZBbMy4cEGKq1AjjDAGRnfJYl/" target="_blank">
-        <p><i class='fab fa-facebook'></i> Facebook</p>
-      </a>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+   </footer>
 
-      <a href="https://www.instagram.com/_c_h_a_a_l_u_l_/" target="_blank">
-        <p><i class='fab fa-instagram'></i> chaalul</p>
-      </a>
-      
-      <a href="https://www.instagram.com/artsof_photos/" target="_blank">
-        <p><i class='fab fa-instagram'></i> ArtsOFphotos</p>
-      </a>
-      
-      <a href="" target="_blank">
-        <p><i class='fab fa-linkedin'></i> LinkedIN</p>
-      </a>
-      
-      <a href="https://medium.com/@shahrulhaq.1373" target="_blank">
-        <p><i class='fab fa-medium'></i> MyBlogSpot</p>
-      </a>
-      
-      <a href="www.shahrulhaq068@gmail.com" target="_blank">
-        <p><i class='fas fa-mail-bulk'></i>Mail</p>
-      </a>
-      
-      <a href="https://github.com/ShahrulHaq" target="_blank">
-        <p><i class='fab fa-github'></i> Github</p>
-      </a>
-      
-      <a href="https://discord.com/channels/shahrulhaq#9922" target="_blank">
-        <p><i class='fab fa-discord'></i> Discord</p>
-      </a>
-      
-      <a href="https://app.futurecareersbridge.net/public-profile/25698" target="_blank">
-        <p><i class='fas fa-drafting-compass'></i> FCB </p>
-      </a>
-    
-    </div>
 
-    
-  </body>
+   <script src="https://unpkg.com/scrollreveal"></script>
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   <script src="js/script.js"></script>
+</body>
+
 </html>
